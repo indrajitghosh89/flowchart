@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart Generator</title>
+    <!-- Include Mermaid CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+    <!-- Include your own CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="description-section">
+            <h2>Description</h2>
+            <textarea id="description" placeholder="Enter your description here..."></textarea>
+            <button id="submit-button">Submit</button>
+        </div>
+        <div class="flowchart-section">
+            <h2>Flowchart</h2>
+            <div id="flowchart"></div>
+            <button id="download-button">Download PDF</button>
+            <button id="download-word-button">Download Word Doc</button>
+        </div>
+    </div>
+
+    <!-- Include Mermaid JS -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <!-- Include jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <!-- Include other scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
